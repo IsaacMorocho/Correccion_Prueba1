@@ -1,41 +1,42 @@
 package FigurasRegulares;
 
-public class Circulo {
+public class Circulo{
     private double radio;
     private double pi = 3.14;
-    //Constructor vacio y con parametros
+    //Constructor con atributos
     public Circulo(double radio) {
         this.radio = radio;
     }
+    //Constructor vacio
     public Circulo() {
 
     }
-    //Getters y setters
+    //Getters
     public double getRadio() {
         return radio;
     }
-    public void setRadio(double radio) {
-        this.radio = radio;
-    }
     public double getPi() {
         return pi;
+    }    
+    //Setters
+    public void setRadio(double radio) {
+        this.radio = radio;
     }
     public void setPi(double pi) {
         this.pi = pi;
     }
-    //Calcular area
+    //Area
     public double area() {
-        return pi * radio * radio;
+        return pi*radio*radio;
     }
-    //Calcular perimetro
+    //Perimetro
     public double perimetro() {
-        return 2 * pi * radio;
+        return 2*pi*radio;
     }
-    //Metodo para imprimir
-    public void imprimir(){
-        System.out.println("Radio: "+ getRadio());
+    //Metodo personalizado
+    public void mostrarCirculo(){
+        System.out.println("Radio del circulo: "+ getRadio());
         System.out.println("El area del circulo es: " + area());
         System.out.println("El perimetro del circulo es: " + perimetro());
-        System.out.println("------------------------------------------------");
     }
 }
